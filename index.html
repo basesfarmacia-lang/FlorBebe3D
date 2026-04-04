@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flor 3D Princesa</title>
+  <link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div id="main-content">
+  <div class="container" id="start-btn-container">
+    <!-- 1. El botón DEBE tener texto para que el usuario haga clic y active el audio -->
+    <button id="start-btn" class="button">Presioname ❤️</button>
+  </div>
+  
+  <!-- 2. CAMBIO CRÍTICO: preload="auto" para que el navegador prepare el archivo -->
+  <audio id="bg-music" src="cigarro.mp3" preload="auto"></audio>
+  
+  <canvas id="galaxy-canvas" style="display:none;opacity:0;will-change:opacity;position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:10;"></canvas>
+  <div class="wrapper" style="display:none;">
+      <div class="flower"></div>
+  </div>
+  <div class="flower-message" style="display:none;"></div>
+</div>
+
+<style>
+/* Estilos adicionales si los necesitas aquí */
+</style>
+
+<!-- 3. Asegúrate de que js/main.js tenga la función music.play() dentro del evento click -->
+<script src="js/main.js" defer></script>
+
+</body>
+</html>
